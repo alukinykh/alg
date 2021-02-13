@@ -28,9 +28,9 @@ def depth_first_search(graph, start, visited=[]):
     return visited
 
 
-n = int(input('Введите количество вершин: '))
-input_point = int(input("Введите точку входа: "))
+count = int(input('Введите количество вершин: '))
+input_point = int(input('Введите точку входа: '))
 
-my_graph = generate_graph(n)
+my_graph = generate_graph(count)
 print('Граф', *my_graph, sep='\n')
 print('Обход графа: ', depth_first_search(my_graph, input_point))
